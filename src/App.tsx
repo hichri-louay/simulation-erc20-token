@@ -1,4 +1,3 @@
-import{ useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Line, Pie } from 'react-chartjs-2';
 import './App.css';
@@ -18,8 +17,8 @@ function App() {
   const reservedTokens = firstRoundMint * 0.1; // 10% reserved
 
   // Example supply simulation data (starting with first round mint)
-  const [years, setYears] = useState([2024, 2025, 2026, 2027, 2028]);
-  const [supply, setSupply] = useState([0.1, 0.3, 0.5, 0.7, 1]); // Supply growth over time (in billions)
+  const years = [2024, 2025, 2026, 2027, 2028];
+  const supply = [0.1, 0.3, 0.5, 0.7, 1]; // Supply growth over time (in billions)
 
   // Simulate token distribution (e.g., pie chart for first round distribution)
   const distributionData = {
